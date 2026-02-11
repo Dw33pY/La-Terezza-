@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Terrazza | Italian Restaurant Nairobi</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+  <!-- WhatsApp Button - Left Side -->
+  <a href="https://wa.me/254748101503?text=Hello!%20I'd%20like%20to%20make%20a%20reservation%20at%20La%20Terrazza" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+      <path fill="#fff" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.96.53 3.86 1.54 5.5L2 22l4.68-1.58c1.61.88 3.43 1.35 5.33 1.35 5.46 0 9.92-4.45 9.92-9.91 0-2.65-1.03-5.14-2.91-7.02A9.86 9.86 0 0 0 12.04 2zm5.77 14.24c-.27.76-1.33 1.39-2.18 1.47-.58.06-1.32.09-2.12-.2-.46-.17-1.04-.39-1.79-.77-2.47-1.24-4.09-3.84-4.21-4.02-.12-.18-1.01-1.34-1.01-2.56s.64-1.82.87-2.07c.23-.25.5-.31.67-.31.17 0 .34.01.49.01.16 0 .4-.06.63.48.23.54.79 1.87.86 2.01.07.14.12.31.02.5-.1.19-.14.31-.27.48-.14.17-.27.31-.41.5-.14.18-.27.36-.12.55.15.19.68 1.13 1.47 1.83.91.81 1.66 1.05 1.96 1.16.3.11.48.09.66-.06.18-.15.77-.9.97-1.21.2-.31.41-.26.69-.16.28.1 1.78.84 2.09.99.31.15.52.22.59.35.08.13.08.7-.19 1.46z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Back to Top Button - Right Side -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+      <path fill="#fff" d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+    <span>Top</span>
+  </button>
+
+  <nav class="navbar">
+    <div class="logo">La Terrazza</div>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#wine">Wine Cellar</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Authentic Italian Elegance</h1>
+      <p>Fine Dining Experience in Nairobi</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="section glass">
+    <h2>About La Terrazza</h2>
+    <p>
+      Experience handcrafted Italian cuisine made with passion and tradition.
+      From wood-fired pizzas to classic pasta and fine wines, every dish tells a story.
+    </p>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Signature Dishes</h2>
+
+    <div class="menu-grid">
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=500&q=80" alt="Lasagna">
+        </div>
+        <div class="card-info">
+          <h3>Classic Lasagna</h3>
+          <p>Rich beef ragù layered with creamy béchamel & mozzarella.</p>
+          <span class="price">KES 1,800</span>
+        </div>
+      </div>
+
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/20115306/pexels-photo-20115306.jpeg" alt="Margherita">
+        </div>
+        <div class="card-info">
+          <h3>Margherita Pizza</h3>
+          <p>Fresh basil, tomato sauce & buffalo mozzarella.</p>
+          <span class="price">KES 1,400</span>
+        </div>
+      </div>
+
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=500&q=80" alt="Tiramisu">
+        </div>
+        <div class="card-info">
+          <h3>Tiramisu</h3>
+          <p>Mascarpone delight infused with espresso & cocoa.</p>
+          <span class="price">KES 950</span>
+        </div>
+      </div>
+      
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Risotto">
+        </div>
+        <div class="card-info">
+          <h3>Mushroom Risotto</h3>
+          <p>Creamy arborio rice with wild mushrooms and parmesan.</p>
+          <span class="price">KES 1,600</span>
+        </div>
+      </div>
+      
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Bistecca">
+        </div>
+        <div class="card-info">
+          <h3>Bistecca Fiorentina</h3>
+          <p>Grilled T-bone steak with rosemary and sea salt.</p>
+          <span class="price">KES 3,200</span>
+        </div>
+      </div>
+      
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=500&q=80" alt="Gnocchi">
+        </div>
+        <div class="card-info">
+          <h3>Gnocchi Sorrentina</h3>
+          <p>Potato dumplings with tomato sauce and melted mozzarella.</p>
+          <span class="price">KES 1,500</span>
+        </div>
+      </div>
+    </div>
+    
+    <div style="margin-top: 50px;">
+       <a href="menu.html" class="btn secondary">View Full Menu</a>
+    </div>
+  </section>
+  
+  <section id="wine" class="section glass">
+    <h2>Our Wine Cellar</h2>
+    <div class="menu-grid">
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=80" alt="Red Wine">
+        </div>
+        <div class="card-info">
+          <h3>Chianti Classico</h3>
+          <p>Bold Tuscan red with cherry and spice notes.</p>
+          <span class="price">KES 4,500</span>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1559598467-f8b76c8155d0?auto=format&fit=crop&w=500&q=80" alt="White Wine">
+        </div>
+        <div class="card-info">
+          <h3>Pinot Grigio</h3>
+          <p>Crisp white with citrus and green apple flavors.</p>
+          <span class="price">KES 3,800</span>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=500&q=80" alt="Prosecco">
+        </div>
+        <div class="card-info">
+          <h3>Prosecco Superiore</h3>
+          <p>Sparkling wine with pear and acacia aromas.</p>
+          <span class="price">KES 3,200</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="parallax-section">
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <h2>Dining Redefined</h2>
+      <p>Where ambiance meets Italian excellence.</p>
+    </div>
+  </section>
+  
+  <section id="events" class="section">
+    <h2>Private Events</h2>
+    <div class="menu-grid">
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=500&q=80" alt="Wedding">
+        </div>
+        <div class="card-info">
+          <h3>Weddings & Celebrations</h3>
+          <p>Elegant terrace setting for your special day.</p>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.pexels.com/photos/7648472/pexels-photo-7648472.jpeg" alt="Corporate">
+        </div>
+        <div class="card-info">
+          <h3>Corporate Dining</h3>
+          <p>Impress clients with authentic Italian hospitality.</p>
+        </div>
+      </div>
+      <div class="card glass">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=80" alt="Wine Tasting">
+        </div>
+        <div class="card-info">
+          <h3>Wine Tasting Events</h3>
+          <p>Curated tastings from our sommelier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section glass">
+    <h2>Visit Us</h2>
+    <p>Rhapta Promenade, Nairobi</p>
+    <p>Reservations: +254 748 101503</p>
+    <p style="margin-top: 20px;">📧 reservations@laterrazza.co.ke</p>
+    <p>🕒 Mon-Sun: 12:00pm - 11:00pm</p>
+  </section>
+
+  <footer>
+    <p>© 2026 La Terrazza</p>
+    <p class="credit">Made by Dw33pY</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
