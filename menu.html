@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | La Terrazza Nairobi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="menu-page">
+
+  <a href="https://wa.me/254748101503?text=Hello!%20I'd%20like%20to%20make%20a%20reservation%20at%20La%20Terrazza" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+      <path fill="#fff" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.96.53 3.86 1.54 5.5L2 22l4.68-1.58c1.61.88 3.43 1.35 5.33 1.35 5.46 0 9.92-4.45 9.92-9.91 0-2.65-1.03-5.14-2.91-7.02A9.86 9.86 0 0 0 12.04 2zm5.77 14.24c-.27.76-1.33 1.39-2.18 1.47-.58.06-1.32.09-2.12-.2-.46-.17-1.04-.39-1.79-.77-2.47-1.24-4.09-3.84-4.21-4.02-.12-.18-1.01-1.34-1.01-2.56s.64-1.82.87-2.07c.23-.25.5-.31.67-.31.17 0 .34.01.49.01.16 0 .4-.06.63.48.23.54.79 1.87.86 2.01.07.14.12.31.02.5-.1.19-.14.31-.27.48-.14.17-.27.31-.41.5-.14.18-.27.36-.12.55.15.19.68 1.13 1.47 1.83.91.81 1.66 1.05 1.96 1.16.3.11.48.09.66-.06.18-.15.77-.9.97-1.21.2-.31.41-.26.69-.16.28.1 1.78.84 2.09.99.31.15.52.22.59.35.08.13.08.7-.19 1.46z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+      <path fill="#fff" d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </svg>
+    <span>Top</span>
+  </button>
+
+  <nav class="navbar scrolled">
+    <div class="logo">La Terrazza</div>
+    
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#wine">Wine</a></li>
+      <li><a href="index.html#events">Events</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    
+    <a href="index.html" class="btn" style="padding: 8px 20px; font-size: 0.8rem; display: none;" id="desktopBackBtn">Back Home</a>
+  </nav>
+
+  <header class="section" style="padding-top: 150px; padding-bottom: 50px;">
+    <h1>Our Full Menu</h1>
+    <p style="color: #d4af37;">Crafted with Italian Tradition</p>
+  </header>
+
+  <main class="section" style="padding-top: 20px;">
+    
+    <div class="menu-category">
+      <h2 class="category-title">Antipasti</h2>
+      <div class="menu-grid">
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80" alt="Bruschetta"></div>
+          <div class="card-info">
+            <h3>Bruschetta Toscana</h3>
+            <p>Grilled bread with cherry tomatoes, garlic, and extra virgin olive oil.</p>
+            <span class="price">KES 900</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1559144490-8328294facd8?auto=format&fit=crop&w=500&q=80" alt="Calamari"></div>
+          <div class="card-info">
+            <h3>Calamari Fritti</h3>
+            <p>Crispy fried squid served with a spicy marinara dip.</p>
+            <span class="price">KES 1,200</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=500&q=80" alt="Caprese"></div>
+          <div class="card-info">
+            <h3>Insalata Caprese</h3>
+            <p>Fresh mozzarella, tomatoes, basil, and balsamic glaze.</p>
+            <span class="price">KES 1,100</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=500&q=80" alt="Arancini"></div>
+          <div class="card-info">
+            <h3>Arancini</h3>
+            <p>Golden fried risotto balls filled with mozzarella and ragù.</p>
+            <span class="price">KES 950</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?auto=format&fit=crop&w=500&q=80" alt="Prosciutto"></div>
+          <div class="card-info">
+            <h3>Prosciutto e Melone</h3>
+            <p>Aged parma ham with sweet cantaloupe melon.</p>
+            <span class="price">KES 1,300</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=500&q=80" alt="Polpo"></div>
+          <div class="card-info">
+            <h3>Polpo alla Griglia</h3>
+            <p>Grilled octopus with lemon, olive oil, and herbs.</p>
+            <span class="price">KES 1,800</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category" style="margin-top: 80px;">
+      <h2 class="category-title">Primi</h2>
+      <div class="menu-grid">
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=500&q=80" alt="Arrabbiata"></div>
+          <div class="card-info">
+            <h3>Penne Arrabbiata</h3>
+            <p>Pasta in a spicy tomato sauce with garlic and red chili peppers.</p>
+            <span class="price">KES 1,500</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=80" alt="Carbonara"></div>
+          <div class="card-info">
+            <h3>Spaghetti Carbonara</h3>
+            <p>Egg, pecorino, guanciale, and black pepper.</p>
+            <span class="price">KES 1,600</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1645112411342-4665a10ef3d8?auto=format&fit=crop&w=500&q=80" alt="Pesto"></div>
+          <div class="card-info">
+            <h3>Trofie al Pesto</h3>
+            <p>Ligurian pasta with basil pesto, potatoes, and green beans.</p>
+            <span class="price">KES 1,550</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9?auto=format&fit=crop&w=500&q=80" alt="Ravioli"></div>
+          <div class="card-info">
+            <h3>Ravioli di Ricotta</h3>
+            <p>Homemade ravioli with ricotta and spinach in sage butter.</p>
+            <span class="price">KES 1,700</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-category" style="margin-top: 80px;">
+      <h2 class="category-title">Secondi</h2>
+      <div class="menu-grid">
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?auto=format&fit=crop&w=500&q=80" alt="Salmon"></div>
+          <div class="card-info">
+            <h3>Grilled Salmon</h3>
+            <p>Fresh salmon fillet served with asparagus and lemon butter sauce.</p>
+            <span class="price">KES 2,400</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=500&q=80" alt="Ossobuco"></div>
+          <div class="card-info">
+            <h3>Ossobuco</h3>
+            <p>Braised veal shanks with gremolata and saffron risotto.</p>
+            <span class="price">KES 3,500</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Bistecca"></div>
+          <div class="card-info">
+            <h3>Bistecca alla Fiorentina</h3>
+            <p>32oz T-bone steak, char-grilled and finished with olive oil.</p>
+            <span class="price">KES 5,200</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=500&q=80" alt="Pollo"></div>
+          <div class="card-info">
+            <h3>Pollo alla Cacciatora</h3>
+            <p>Hunter-style chicken braised with tomatoes, olives, and herbs.</p>
+            <span class="price">KES 1,900</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-category" style="margin-top: 80px;">
+      <h2 class="category-title">Dolci</h2>
+      <div class="menu-grid">
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=500&q=80" alt="Tiramisu"></div>
+          <div class="card-info">
+            <h3>Tiramisu Classico</h3>
+            <p>Mascarpone delight infused with espresso & cocoa.</p>
+            <span class="price">KES 950</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80" alt="Panna Cotta"></div>
+          <div class="card-info">
+            <h3>Panna Cotta</h3>
+            <p>Silky cream pudding with wild berry compote.</p>
+            <span class="price">KES 850</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=500&q=80" alt="Cannoli"></div>
+          <div class="card-info">
+            <h3>Cannoli Siciliani</h3>
+            <p>Crispy pastry shells filled with sweet ricotta and pistachios.</p>
+            <span class="price">KES 900</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <div class="card-img"><img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=500&q=80" alt="Affogato"></div>
+          <div class="card-info">
+            <h3>Affogato</h3>
+            <p>Vanilla gelato drowned in hot espresso.</p>
+            <span class="price">KES 750</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 La Terrazza Nairobi</p>
+  </footer>
+
+  <script>
+    // ========== FIX: KILL GLOBAL SCROLLTRIGGER ON CARDS ==========
+    if (typeof ScrollTrigger !== 'undefined') {
+      ScrollTrigger.getAll().forEach(trigger => {
+        if (trigger.trigger && (trigger.trigger.classList.contains('card') || trigger.trigger.classList.contains('glass'))) {
+          trigger.kill();
+        }
+      });
+    }
+
+    // ================= MOBILE MENU =================
+    const toggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    
+    if (toggle && navLinks) {
+      toggle.addEventListener("click", function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        this.classList.toggle("active");
+        navLinks.classList.toggle("active");
+        document.body.style.overflow = navLinks.classList.contains("active") ? "hidden" : "auto";
+      });
+
+      function closeMenu() {
+        toggle.classList.remove("active");
+        navLinks.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("click", function(e) {
+        if (navLinks.classList.contains("active") && !toggle.contains(e.target) && !navLinks.contains(e.target)) {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener("resize", function() {
+        if (window.innerWidth > 768) closeMenu();
+      });
+    }
+
+    // ================= FIXED ENTRANCE ANIMATION =================
+    // Uses .fromTo and overwrite: "auto" to prevent CSS 'transition' conflicts
+    // which were causing the elements to stay hidden.
+    gsap.fromTo(".card", 
+      { opacity: 0, y: 30 }, 
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 0.8, 
+        stagger: 0.1, 
+        ease: "power2.out",
+        overwrite: "auto"
+      }
+    );
+
+    // ================= BACK TO TOP BUTTON =================
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+      window.addEventListener('scroll', function() {
+        backToTop.classList.toggle('show', window.scrollY > 300);
+      });
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  </script>
+</body>
+</html>
